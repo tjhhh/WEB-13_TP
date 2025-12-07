@@ -214,7 +214,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Selamat Datang, admin</h1>
+            <h1>Selamat Datang, {{ Auth::user()->name }}</h1>
             <form action="/logout" method="POST">
                 @csrf
                 <button type="submit" class="logout-btn">Logout</button>
